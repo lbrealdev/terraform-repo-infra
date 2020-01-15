@@ -4,6 +4,12 @@ variable "region" {
   description = "AWS region"
 }
 
+variable "destination_cidr_block" {
+  type        = string
+  default     = "0.0.0.0/0"
+  description = "Destination cidr_block"
+}
+
 variable "name" {
   type        = string
   default     = "testlb01s"
@@ -38,4 +44,16 @@ variable "map_public_ip_on_launch" {
   description = "Should be false if you do not want to auto-assign public IP on launch"
   type        = bool
   default     = true
+}
+
+variable "instance_type" {
+  type        = string
+  default     = "t2.micro"
+  description = "Type instance EC2"
+}
+
+variable "associate_public_ip_address" {
+  type        = bool
+  default     = true
+  description = "Enable IP public"
 }
