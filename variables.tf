@@ -72,7 +72,7 @@ variable "validation_method" {
 
 variable "lb_arn" {
   type    = string
-  default = "arn:aws:elasticloadbalancing:eu-central-1:134924494881"
+  default = "arn:aws:elasticloadbalancing:eu-central-XXXXXXXX"
 }
 
 variable "lb_name" {
