@@ -57,3 +57,25 @@ variable "associate_public_ip_address" {
   default     = true
   description = "Enable IP public"
 }
+
+variable "domain_name" {
+  type        = string
+  default     = "www.lbgc.io"
+  description = "Domain name"
+}
+
+variable "validation_method" {
+  type        = string
+  default     = "DNS"
+  description = "Method validation DNS"
+}
+
+variable "lb_arn" {
+  type    = string
+  default = "arn:aws:elasticloadbalancing:eu-central-1:134924494881"
+}
+
+variable "lb_name" {
+  type    = string
+  default = "front"
+}
